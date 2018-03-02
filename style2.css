@@ -1,0 +1,321 @@
+body { /*Padronizando o corpo da página*/
+	margin: 0;
+	font-family: 'Open Sans', Arial, 'sans-serif';
+	font-size: 12px;
+}
+h1, h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+p{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Topo 1º Retangulo*/
+.topo { /*Estilizando a div do topo (onde fica campo de pesquisa)*/ 
+	background-color: #333;
+	color: #fff;
+}
+.container {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 30px;
+	margin: auto;
+}
+.containerleft { /*Estilizando nav do topo*/
+	width: 50%;
+	float: left;
+}
+.containerleft ul { /*Estilizando lista de navegação do topo*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.containerleft li { /*Estilizando os items(opções) da lista de navegação*/
+	float: left;
+	line-height: 30px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.containerleft li a { /*Tirando formato padrão de link dos meus items da lista de navegação, (PODERIA FAZER UM RESET NO TOPO DO CSS PARA TRATAR ISTO)*/
+	text-decoration: none;
+	color: #fff;
+}
+.containerleft li .ativo { /*Estilizando o página selecionada*/
+	color: #1E90FF;
+}
+.containerright { /*Estilizando nav do lado direito*/
+	width: 50%;
+	float: right;
+	text-align: right;
+	margin-top: 0.2%; /*aproximadamente 2px*/
+}
+.containerbusca { /*Estilizando campo de buscar noticias*/
+	width: 22%;
+	height: 20px;
+	outline: 0; /*não acender contorno em volta*/
+}
+
+.containerright input { /*Estilizando o campo de busca*/
+	float: right;
+}
+.containerright img { /*Estilizando o espaço entre os icones ao lado do campo de busca*/
+	margin: 0 0.9%;
+	
+}
+
+/*Banner 2º Retângulo*/
+.containerdois {
+	height: 95px;
+	color: #000;
+	background: url("../images/feedback1.png");
+}
+.containerdoisinterno {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adpanto ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 95px;
+	margin: auto;
+}
+.menu img {
+	vertical-align: middle; /*colocando as setinhas do menu no lugar certo.*/
+}
+.logo {
+	width: 25%; /*máximo da largura de um celular é 320px; procurar uma margem de 320px de tudo dentro do site para div*/
+	height: 90px;
+	float: left;
+	margin-top: 5px;
+}
+.brand{
+	width: 70%;
+}
+.containerdois .banner { /*nao direto .banner por que tera outros banners no site com a mesma classe.*/
+	width: 650px;
+	height: 80px;
+	float: right;
+	margin-top: 7px;	/*95 - 80 = 15 / 2 = 7.5 = 7 -> para centralizar o banner, onde 95 = altura toral da div, 80 é a altura do banner, 15 é o que sobra de espaço, 2 é a parte superior e inferior
+	e 7 é a margem superior e inferior.*/
+}
+/*MENU 3º retangulo*/
+
+.menu {
+	height: 40px;
+	background-color: #1E90FF;
+}
+.menuint{
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+
+}
+.menuint li:hover {
+	background-color: #4682B4;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.menu li {
+
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 15px;
+	margin-left: 8px;
+}
+.menu li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+}
+.menu li:hover .submenu{ /*para criar o menu dropdown, quando passar o mouse no meu menu o submenu vai aparecer.*/
+	display: block;
+}
+.submenu {
+	width: 150px;
+	background-color: #1E90FF;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.submenuitem {
+	height: 30px;
+	line-height: 30px;
+	width: 140px;
+	padding-left: 10px;
+}
+.submenuitem:hover {
+	background-color: #4682B4;
+}
+/**/
+.it{
+	width: 80%;
+	margin: auto;
+	background-color: #4682B4;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 25%;
+}
+.span_3_of_4 {
+	width: 25%;
+}
+.span_2_of_4 {
+	width: 25%;
+}
+.span_1_of_4 {
+	width: 20%;
+}
+
+.left {
+    float: left;
+    width: 25%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.center {
+    margin: auto;
+    width: 40%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.right {
+    float: right;
+    width: 25%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+
+.first-content {
+	padding: 1%;
+	box-sizing: border-box;
+	min-height: 500px;
+}
+.left-col, .right-col{
+	background-color: #f4f4f4f4;
+	width: 25%;
+	float: left;
+}
+.center-col{
+	/*background-color: pink;*/
+	width: 50%;
+	float: left;
+}
+/**/
+/* Global */
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+  }
+  article#main-col{
+	float:left;
+	width:65%;
+  }  
+.news{
+	padding:15px;
+	background:hsl(203, 17%, 25%);
+	color:#ffffff;
+	margin: 15px;
+	/*margin-top:10px;
+	margin-bottom:10px;*/
+	width: 50%;
+	position: relative;
+}
+.news-banner{
+	
+	width: 100%;
+	border: 0;
+}
+.content{
+	border: 3px solid white;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+    bottom: 80px;
+    right: 20px;
+    background-color: rgb(186, 183, 233);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Sidebar */
+
+.rightside {
+	width:275px;
+	min-height:200px;
+	float:right;
+	margin-left:12px;
+}
+.ue{
+	width: 10%;
+	margin: -100px;
+	float: right;
+}
+aside.sidebar{
+	background-color:pink; 
+	width: 30%;
+	float: right;
+	margin: 20px;
+	text-align: right;
+	margin-top:-1350px;
+}
+/* /sidebar */
+.containerfooter {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 100px;
+	margin: auto;
+}
+footer{
+	background-color: #333;
+	color: #fff
+}
+.blue {
+	color: #1E90FF;
+}
+footer .containerinternorodape {
+	width: 40%;
+	position: relative;
+	float: left;
+	margin-right: 5%;
+}
+footer .footerimg{
+	width: auto;
+	position: relative;
+	float: center;
+
+}
+footer img, footer p {
+		margin-top: 25px;
+}
+footer .footerdata{
+	width: auto;
+	position: relative;
+	float: right;
+}
